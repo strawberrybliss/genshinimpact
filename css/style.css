@@ -42,7 +42,7 @@ h1, h2 {
     text-decoration: none;
     font-family: "Poppins";
     font-weight: normal;
-    margin-bottom: 20em;
+    margin-bottom: 16em;
     margin-top: 2em;
 }
 
@@ -53,6 +53,10 @@ h1, h2 {
 .menubarra a {
     text-decoration: none;
     color: white;
+}
+
+.menubarra a:hover {
+    color: rgb(235, 180, 137);
 }
 
 .fondo {
@@ -72,10 +76,36 @@ header {
     padding: 0;
 }
 
-.intro {
+#intro {
     margin-top: 15vh;
 }
 
+.ts-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: clamp(1rem, 3.5vw, 2.5rem);
+    margin-bottom: 1em;
+}
+/* cambiar nombre */
+p {
+    font-family: "Source Serif";
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.img-apaisado {
+    width: 55%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
-    background-color: rgb(176, 209, 228);
+    background-color: rgb(111, 156, 183);
 }
