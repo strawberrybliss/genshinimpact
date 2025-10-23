@@ -59,6 +59,7 @@ h1, h2 {
     color: rgb(235, 180, 137);
 }
 
+
 .fondo {
     background-image: url(../media/images/genshinstart.jpg);
     display: block;
@@ -78,6 +79,28 @@ header {
 
 #intro {
     margin-top: 15vh;
+    background-color: rgb(111, 156, 183);
+}
+
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#seccion-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#seccion-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .ts-1 {
@@ -88,12 +111,30 @@ header {
     font-size: clamp(1rem, 3.5vw, 2.5rem);
     margin-bottom: 1em;
 }
-/* cambiar nombre */
-p {
+
+.t-1 {
     font-family: "Source Serif";
     font-size: 1.25em;
     justify-content: center;
     align-items: center;
+    display: flex;
+    color: white;
+}
+
+.t-2 {
+    font-family: "Source Serif";
+    font-size: 1.25em;
+    justify-content: right;
+    align-items: flex-end;
+    display: flex;
+    color: white;
+}
+
+.t-3 {
+    font-family: "Source Serif";
+    font-size: 1.25em;
+    justify-content: left;
+    align-items: flex-start;
     display: flex;
     color: white;
 }
@@ -106,6 +147,28 @@ p {
     align-items: center;
 }
 
-body {
-    background-color: rgb(111, 156, 183);
+.img-cuadrado1 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.img-cuadrado2 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+#ubi {
+    background-color: rgb(232, 190, 134);
+    margin-top: 15vh;
+}
+
+#form {
+    background-color: rgb(119, 114, 171);
+    margin-top: 15vh;
 }
