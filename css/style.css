@@ -78,7 +78,8 @@ header {
 }
 
 #intro {
-    margin-top: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     background-color: rgb(111, 156, 183);
 }
 
@@ -165,10 +166,18 @@ header {
 
 #ubi {
     background-color: rgb(232, 190, 134);
-    margin-top: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 #form {
     background-color: rgb(119, 114, 171);
-    margin-top: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
