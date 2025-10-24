@@ -32,18 +32,29 @@ h1, h2 {
     align-items: center;
     flex-direction: column;
     color: white;
+    padding-top: 19em;
 }
 
 .menubarra {
     display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     list-style: none;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "Source-Serif";
     font-weight: normal;
-    margin-bottom: 16em;
-    margin-top: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: rgb(198, 156, 136);
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
 }
 
 .menubarra li {
@@ -53,12 +64,20 @@ h1, h2 {
 .menubarra a {
     text-decoration: none;
     color: white;
+    font-size: 1em;
 }
 
-.menubarra a:hover {
-    color: rgb(235, 180, 137);
+.menubarra li:nth-child(1) a:hover {
+  color: #82b6bc;
 }
 
+.menubarra li:nth-child(2) a:hover {
+  color: #d5bf8a;
+}
+
+.menubarra li:nth-child(3) a:hover {
+  color: #b99adf;
+}
 
 .fondo {
     background-image: url(../media/images/genshinstart.jpg);
@@ -80,7 +99,12 @@ header {
 #intro {
     padding-top: 15vh;
     padding-bottom: 15vh;
-    background-color: rgb(111, 156, 183);
+    background-image: url(../media/images/fondo1.png);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 .seccion {
@@ -114,7 +138,7 @@ header {
 }
 
 .t-1 {
-    font-family: "Source Serif";
+    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: center;
     align-items: center;
@@ -123,7 +147,7 @@ header {
 }
 
 .t-2 {
-    font-family: "Source Serif";
+    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: right;
     align-items: flex-end;
@@ -132,7 +156,7 @@ header {
 }
 
 .t-3 {
-    font-family: "Source Serif";
+    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: left;
     align-items: flex-start;
@@ -140,40 +164,170 @@ header {
     color: white;
 }
 
+.seccion > p {
+    max-width: 55em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#seccion-2 > p {
+    max-width: 30em;
+    text-align: justify;
+    padding-right: 4em;
+}
+
+#seccion-3 > p {
+    max-width: 30em;
+    text-align: justify;
+    padding-left: 4em;
+}
+
 .img-apaisado {
-    width: 55%;
+    width: 65%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5em;
 }
 
 .img-cuadrado1 {
-    width: 30%;
+    width: 25%;
     height: auto;
     display: flex;
     justify-content: left;
     align-items: flex-start;
+    border-radius: 100%;
 }
 
 .img-cuadrado2 {
-    width: 30%;
+    width: 25%;
     height: auto;
     display: flex;
     justify-content: right;
     align-items: flex-end;
+    border-radius: 100%;
 }
 
 #ubi {
-    background-color: rgb(232, 190, 134);
     padding-top: 15vh;
     padding-bottom: 15vh;
+    background-image: url(../media/images/fondo2.png);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.mapa {
+    width: 80%;
 }
 
 #form {
-    background-color: rgb(119, 114, 171);
     padding-top: 15vh;
     padding-bottom: 15vh;
+    background-image: url(../media/images/fondo3.png);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 3em;
+}
+
+.form-text {
+    color: white;
+    font-family: "Source-Serif";
+    font-size: 1.25em;
+}
+
+input, textarea {
+    width: 100%; 
+    height: 40px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    max-width: 45%;
+    box-shadow: 3px 3px 10px rgb(48, 48, 82) 
+}
+
+.boton {
+    color: white;
+    background-color: rgb(78, 78, 130);
+    border: none;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 30px; 
+    height: 40px;
+    display: block;
+    min-width: 18%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    box-shadow: 3px 3px 10px rgb(48, 48, 82);
+}
+
+.boton:hover { 
+    background-color: rgb(180, 180, 213);
+    color: rgb(78, 78, 130);
+}
+
+#footer {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background-color: rgb(76, 70, 114);
+    display: flex;
+}
+
+.footer-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logo {
+    width: 15%;
+    padding-top: 1.5em;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    color: white;
+    font-size: 1.25em;
+    font-family: "Source-Serif";
+}
+
+.contacto {
+    display: flex;
+    color: white;
+    font-size: 1.25em;
+    font-family: "Source-Serif";
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.90em;
+    font-family: "Source-Serif";
 }
 
 html, body {
