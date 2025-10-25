@@ -261,6 +261,10 @@ input, textarea {
     box-shadow: 3px 3px 10px rgb(48, 48, 82) 
 }
 
+span {
+    color: rgb(48, 48, 82);
+}
+
 .boton {
     color: white;
     background-color: rgb(78, 78, 130);
