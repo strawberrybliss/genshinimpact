@@ -648,9 +648,9 @@ html, body {
 @media (max-width: 500px) {
 
     :root {
-        --titulo-pg: 5.5em;
+        --titulo-pg: 5em;
         --subt-pg: 1.7em;
-        --titulo-sc: 3.4em;
+        --titulo-sc: 3.1em;
         --subt-sc: 1.4em;
     }
 
@@ -692,7 +692,7 @@ html, body {
         margin-bottom: 1em;
     }
 
-    /* Imágenes */
+    
     .img-apaisado,
     .img-cuadrado1,
     .img-cuadrado2 {
@@ -701,5 +701,85 @@ html, body {
         margin-bottom: 1em;
     }
 
+    input {
+        max-width: 75%;
+    }
+
+    #formulario > p {
+        font-size: var(--subt-sc);
+    }
+
+    #nombre,
+    #email,
+    #comment {
+        font-size: var(--subt-sc);
+    }
+
+    .boton {
+        font-size: 1.8em;
+        max-width: 100%;
+    }
+
+    .footer-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .logos {
+        padding-bottom: 2em;
+        padding-left: 3em;
+    }
+
+    .logo {
+        width: 75%;
+    }
+
+    .iconos > p {
+        font-size: var(--subt-sc);
+    }
+
+    .redes-icon {
+        justify-content: center;
+    }
+
+    .contacto {
+        text-align: center;
+        font-size: var(--subt-sc);
+    }
+
+    figure {
+        width: 25em;
+        height: 25em;
+    }
+
+    #entradas-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .entrada {
+        width: 100%;
+        padding-bottom: 2.2em;
+    }
+
+    .calendar {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    .days-names {
+        width: 100%;
+    }
+
+    .cont {
+        padding-top: 33%;
+    }
+
+    .cont > h2 {
+        max-width: 8em;
+    }
 
 }
