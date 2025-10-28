@@ -635,13 +635,71 @@ figure:hover img {
 
 }
 
-/* media queries */
-
-
 /* body */
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+/* media queries responsive movil */
+
+@media (max-width: 500px) {
+
+    :root {
+        --titulo-pg: 5.5em;
+        --subt-pg: 1.7em;
+        --titulo-sc: 3.4em;
+        --subt-sc: 1.4em;
+    }
+
+    .cabecera h1 {
+        text-align: center;
+        font-size: var(--titulo-pg);
+        padding-left: 0.15em;
+    }
+
+    .cabecera h2 {
+        text-align: center;
+        font-size: var(--subt-pg);
+    }
+
+    .ts-1 {
+        font-size: var(--titulo-sc);
+        padding: 1em;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    #seccion-2, #seccion-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    #seccion-2 > p,
+    #seccion-3 > p {
+        max-width: 90%;
+        padding: 1em;
+        font-size: var(--subt-sc);
+        text-align: center;
+    }
+
+    .seccion > p {
+        max-width: 90%;
+        font-size: var(--subt-sc);
+        margin-bottom: 1em;
+    }
+
+    /* Imágenes */
+    .img-apaisado,
+    .img-cuadrado1,
+    .img-cuadrado2 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+
 }
