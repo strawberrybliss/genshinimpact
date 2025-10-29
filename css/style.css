@@ -82,6 +82,71 @@ h1, h2 {
   text-decoration-color: #7878b4
 }
 
+/* menu responsive */
+
+.hamburguesa {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  font-size: 2em;
+  z-index: 2000;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1900;
+}
+
+.menu-responsive.activo {
+  transform: translateX(0);
+}
+
+.menu-responsive ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-responsive li {
+  margin: 1.5em 0;
+}
+
+.menu-responsive a {
+  color: white;
+  font-size: 1.8em;
+  text-decoration: none;
+  font-family: "Source Serif", serif;
+  transition: color 0.2s ease;
+}
+
+
+#cerrar-menu {
+    display: none;
+  position: absolute;
+  top: 1.2em;
+  right: 1.2em;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+}
+
+/* fin menu responsive */
+
 .fondo {
     background-image: url(../media/images/genshinstart.jpg);
     display: block;
@@ -652,6 +717,14 @@ html, body {
         --subt-pg: 1.7em;
         --titulo-sc: 3.1em;
         --subt-sc: 1.4em;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .menubarra {
+        display: none;
     }
 
     .cabecera h1 {

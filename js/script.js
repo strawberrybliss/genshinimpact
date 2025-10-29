@@ -39,3 +39,34 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// menu hamburguesa
+
+document.addEventListener("DOMContentLoaded", () => {
+  const abrirMenu = document.getElementById("abrir-menu");
+  const cerrarMenu = document.getElementById("cerrar-menu");
+  const menuResponsive = document.getElementById("menu-responsive");
+
+
+  abrirMenu.addEventListener("click", () => {
+    menuResponsive.classList.add("activo");
+    abrirMenu.style.display = "none";
+    cerrarMenu.style.display = "block";
+  });
+
+
+  cerrarMenu.addEventListener("click", () => {
+    menuResponsive.classList.remove("activo");
+    cerrarMenu.style.display = "none";
+    abrirMenu.style.display = "block";
+  });
+
+  
+  document.querySelectorAll(".menu-responsive a").forEach(link => {
+    link.addEventListener("click", () => {
+      menuResponsive.classList.remove("activo");
+      cerrarMenu.style.display = "none";
+      abrirMenu.style.display = "block";
+    });
+  });
+});
+
