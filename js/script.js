@@ -41,32 +41,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // menu hamburguesa
 
-document.addEventListener("DOMContentLoaded", () => {
-  const abrirMenu = document.getElementById("abrir-menu");
-  const cerrarMenu = document.getElementById("cerrar-menu");
-  const menuResponsive = document.getElementById("menu-responsive");
+function openMenu() {
+  console.log("Función openMenu");
+  document.getElementById("menu-responsive").classList.add("activo");
+  document.getElementById("abrir").style.display = "none";
+}
 
-
-  abrirMenu.addEventListener("click", () => {
-    menuResponsive.classList.add("activo");
-    abrirMenu.style.display = "none";
-    cerrarMenu.style.display = "block";
-  });
-
-
-  cerrarMenu.addEventListener("click", () => {
-    menuResponsive.classList.remove("activo");
-    cerrarMenu.style.display = "none";
-    abrirMenu.style.display = "block";
-  });
-
-  
-  document.querySelectorAll(".menu-responsive a").forEach(link => {
-    link.addEventListener("click", () => {
-      menuResponsive.classList.remove("activo");
-      cerrarMenu.style.display = "none";
-      abrirMenu.style.display = "block";
-    });
-  });
-});
+function closeMenu() {
+  console.log("Función closeMenu");
+  document.getElementById("menu-responsive").classList.remove("activo");
+  document.getElementById("abrir").style.display = "block";
+}
 

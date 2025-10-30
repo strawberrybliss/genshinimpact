@@ -82,70 +82,6 @@ h1, h2 {
   text-decoration-color: #7878b4
 }
 
-/* menu responsive */
-
-.hamburguesa {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  font-size: 2em;
-  z-index: 2000;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-.menu-responsive {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(8px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: 1900;
-}
-
-.menu-responsive.activo {
-  transform: translateX(0);
-}
-
-.menu-responsive ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-responsive li {
-  margin: 1.5em 0;
-}
-
-.menu-responsive a {
-  color: white;
-  font-size: 1.8em;
-  text-decoration: none;
-  font-family: "Source Serif", serif;
-  transition: color 0.2s ease;
-}
-
-
-#cerrar-menu {
-    display: none;
-  position: absolute;
-  top: 1.2em;
-  right: 1.2em;
-  font-size: 2em;
-  cursor: pointer;
-  color: white;
-}
-
-/* fin menu responsive */
 
 .fondo {
     background-image: url(../media/images/genshinstart.jpg);
@@ -710,11 +646,88 @@ html, body {
 
 /* media queries responsive movil */
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
+
+    .menu-barras {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        top: 1em;
+        left: 1em;
+        z-index: 2000;
+        font-size: 1.5em;
+        margin-top: 0.75em;
+        color: white;
+    }
+
+    .menu-responsive {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1900;
+    }
+
+    .menu-responsive ul {
+        list-style: none;
+    }
+
+    .menu-responsive li {
+        margin: 2em;
+    }
+
+    .menu-responsive a {
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+        transition: color 0.2s ease;
+    }
+
+    .menu-responsive li:nth-child(1) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #6890a6;
+    }
+
+    .menu-responsive li:nth-child(2) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #c8a379;
+    }
+
+    .menu-responsive li:nth-child(3) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #7878b4
+    }
+
+    .menu-responsive.activo {
+        transform: translateX(0);
+    }
+
+    #cerrar-menu {
+        position: absolute;
+        top: 1.2em;
+        right: 1.2em;
+        font-size: 2em;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+
+
+
+/* fin menu responsive */
 
     :root {
         --titulo-pg: 5em;
-        --subt-pg: 1.7em;
+        --subt-pg: 2em;
         --titulo-sc: 3.1em;
         --subt-sc: 1.4em;
     }
@@ -793,6 +806,7 @@ html, body {
         max-width: 100%;
     }
 
+
     .footer-cont {
         flex-direction: column;
         align-items: center;
@@ -800,17 +814,11 @@ html, body {
         gap: 1em;
     }
 
-    .logos {
-        padding-bottom: 2em;
-        padding-left: 3em;
-    }
-
     .logo {
         width: 75%;
-    }
+        padding-left: 4em;
+        padding-bottom: 1em;
 
-    .iconos > p {
-        font-size: var(--subt-sc);
     }
 
     .redes-icon {
@@ -819,7 +827,6 @@ html, body {
 
     .contacto {
         text-align: center;
-        font-size: var(--subt-sc);
     }
 
     figure {
@@ -856,3 +863,5 @@ html, body {
     }
 
 }
+
+/* media queries tablet responsive */
