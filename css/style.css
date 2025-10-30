@@ -82,6 +82,14 @@ h1, h2 {
   text-decoration-color: #7878b4
 }
 
+.menu-barras {
+    display: none;
+}
+
+.menu-responsive {
+    display: none;
+}
+
 
 .fondo {
     background-image: url(../media/images/genshinstart.jpg);
@@ -646,7 +654,7 @@ html, body {
 
 /* media queries responsive movil */
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
 
     .menu-barras {
         display: block;
@@ -720,10 +728,6 @@ html, body {
         display: block;
         color: white;
     }
-
-
-
-/* fin menu responsive */
 
     :root {
         --titulo-pg: 5em;
@@ -865,3 +869,193 @@ html, body {
 }
 
 /* media queries tablet responsive */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .menu-barras {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        top: 1em;
+        left: 1em;
+        z-index: 2000;
+        font-size: 2.5em;
+        margin-top: 0.75em;
+        color: white;
+    }
+
+    .menu-responsive {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1900;
+    }
+
+    .menu-responsive ul {
+        list-style: none;
+    }
+
+    .menu-responsive li {
+        margin: 3em;
+    }
+
+    .menu-responsive a {
+        text-decoration: none;
+        font-size: 3em;
+        color: white;
+        transition: color 0.2s ease;
+    }
+
+    .menu-responsive li:nth-child(1) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #6890a6;
+    }
+
+    .menu-responsive li:nth-child(2) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #c8a379;
+    }
+
+    .menu-responsive li:nth-child(3) a:hover {
+        text-decoration: overline;
+        text-decoration-color: #7878b4
+    }
+
+    .menu-responsive.activo {
+        transform: translateX(0);
+    }
+
+    #cerrar-menu {
+        position: absolute;
+        top: 1.2em;
+        right: 1.2em;
+        font-size: 3.5em;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+
+    .menubarra {
+        display: none;
+    }
+
+    :root {
+        --titulotablet1: 7em;
+        --subtablet1: 3em;
+        --titulotablet2: 5em;
+        --subtablet2: 2.5em;
+    }
+
+    .cabecera h1 {
+        font-size: var(--titulotablet1);
+        padding-top: 2em;
+    }
+
+    .cabecera h2 {
+        font-size: var(--subtablet1);
+    }
+
+    .img-apaisado,
+    .img-cuadrado1,
+    .img-cuadrado2 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .ts-1 {
+        font-size: var(--titulotablet2);
+        padding: 1em;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    #seccion-2, #seccion-3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #seccion-2 > p,
+    #seccion-3 > p {
+        max-width: 90%;
+        padding: 1em;
+        font-size: var(--subtablet2);
+        text-align: center;
+    }
+
+    .seccion > p {
+        max-width: 90%;
+        font-size: var(--subtablet2);
+        margin-bottom: 1em;
+    }
+
+    input {
+        max-width: 75%;
+    }
+
+    #formulario > p {
+        font-size: var(--subtablet2);
+    }
+
+    #nombre,
+    #email,
+    #comment {
+        font-size: 2em;
+    }
+
+    .boton {
+        font-size: 2.5em;
+        max-width: 100%;
+    }
+
+    #entradas-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .entrada {
+        width: 100%;
+        padding-bottom: 2.2em;
+    }
+
+    .calendar {
+        width: 85%;
+        padding: 1.5em;
+    }
+
+    .days-names {
+        width: 100%;
+    }
+    
+    .entrada {
+        font-size: 2em;
+    }
+
+    .cont {
+        padding-top: 28%;
+    }
+
+    .cont > h2 {
+        max-width: 8em;
+    }
+
+    .subfinal {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 3em;
+        text-align: center;
+    }
+}
