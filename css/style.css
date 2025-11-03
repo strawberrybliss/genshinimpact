@@ -46,7 +46,6 @@ h1, h2 {
     text-align: center;
     list-style: none;
     text-decoration: none;
-    font-family: "Source-Serif";
     font-weight: normal;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -150,7 +149,6 @@ header {
 }
 
 .t-1 {
-    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: center;
     align-items: center;
@@ -159,7 +157,6 @@ header {
 }
 
 .t-2 {
-    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: right;
     align-items: flex-end;
@@ -168,7 +165,6 @@ header {
 }
 
 .t-3 {
-    font-family: "Source-Serif";
     font-size: 1.25em;
     justify-content: left;
     align-items: flex-start;
@@ -258,7 +254,6 @@ header {
 
 .form-text {
     color: white;
-    font-family: "Source-Serif";
     font-size: 1.25em;
 }
 
@@ -347,14 +342,12 @@ span {
 }
 
 
-
 /* footer */
 
 #footer {
     padding-top: 5vh;
     padding-bottom: 3vh;
     color: white;
-    font-family: "Source-Serif";
     background-color: rgb(76, 70, 114);
     display: flex;
     flex-direction: column;
@@ -550,7 +543,6 @@ figure:hover img {
 #entradas-wrapper p {
     color: white;
     font-size: 1.7em;
-    font-family: "Source-Serif";
 }
 
 .entrada {
@@ -562,16 +554,19 @@ figure:hover img {
 }
 
 .entrada .price {
-    color: white;
-    font-family: "Source-Serif";
+    color: rgb(44, 40, 67);
     font-size: 1.5em;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
 }
 
+.precio1,
+.precio2 {
+    padding: 0.35em;
+}
+
 .entrada .count {
     color: rgb(44, 40, 67);
-    font-family: "Souce-Serif";
     font-size: 1.5em;
 }
 
@@ -611,7 +606,6 @@ figure:hover img {
     width: 40em;
     text-align: center;
     margin: 1.5em auto;
-    font-family: "Source-Serif";
     border-radius: 5em;
 }
 
@@ -675,6 +669,10 @@ figure:hover img {
     box-shadow: 3px 3px 10px rgb(78, 78, 109);
     justify-content: center;
     align-items: center;
+}
+
+input.boton {
+    max-width: 20%;
 }
 
 .boton:hover { 
@@ -879,6 +877,10 @@ html, body {
     .boton {
         font-size: 1.8em;
         max-width: 100%;
+    }
+
+    input.boton {
+        max-width: 40%;
     }
 
 
@@ -1159,6 +1161,4 @@ html, body {
     .close {
         font-size: 3em;
     }
-
-
 }

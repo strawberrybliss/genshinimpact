@@ -98,14 +98,14 @@
                 <div class="seccion">
                     <p class="t-1">Rellena el siguiente formulario y déjanos acompañarte en este viaje. Pronto recibirás toda la información necesaria para vivir la experiencia completa de la exposición. Forma parte de la comunidad de viajeros de Teyvat y prepárate para descubrir un mundo donde cada instante cuenta, cada historia inspira y cada recuerdo se convierte en magia.</p>
                 </div>
-                <form id="formulario">
+                <form id="formulario"onsubmit="return openModal()">
                     <p class="form-text">✦ Nombre<span>*</span> ✦</p>
-                    <input type="text" id="nombre" placeholder="Escribe tu nombre...">
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre..." required>
                     <p class="form-text">✦ E-mail<span>*</span> ✦</p>
-                    <input type="text" id="email" placeholder="Escribe tu e-mail...">
+                    <input type="text" id="email" placeholder="Escribe tu e-mail..." required>
                     <p class="form-text">✦ Comentario<span>*</span> ✦</p>
-                    <input type="text" id="comment" placeholder="Escribe un mensaje...">
-                    <button id="boton" class="boton" onclick="return openModal()">Enviar</button>
+                    <input type="text" id="comment" placeholder="Escribe un mensaje..." required>
+                    <input class="boton" type="submit">
                 </form>
 
                 <!-- ventana modal -->
@@ -114,7 +114,9 @@
                     <div class="modal-content">
                         <span onclick="closeModal()" id="close" class="close">&times;</span>
                         <h2>Formulario recibido viajer@ ✦</h2>
-                        <p id="modalMessage"></p>
+                        <p>Gracias, <strong id="n"></strong></p>
+                        <p>Hemos recibido tu mensaje: <br><strong id="m"></strong></p>
+                        <p>Te contactaremos pronto a <br><strong id="c"></strong></p>
                     </div>
                 </div>
 

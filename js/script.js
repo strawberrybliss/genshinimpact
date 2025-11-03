@@ -23,11 +23,9 @@ function openModal() {
   console.log("Correo:", correo);
   console.log("Mensaje", mensaje);
 
-  var modalMessage = document.getElementById("modalMessage");modalMessage.innerHTML = `
-     Gracias, <strong>${nombre}</strong><br><br>
-     Hemos recibido tu mensaje:<br>${mensaje}<br><br>
-     Te contactaremos pronto a <strong>${correo}</strong>
-   `;
+  document.getElementById("n").innerHTML = nombre
+  document.getElementById("c").innerHTML = correo
+  document.getElementById("m").innerHTML = mensaje
 
   document.getElementById("modal").style.display = "flex";
 
@@ -38,6 +36,8 @@ function openModal() {
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
+
+  return false;
 }
 
 
@@ -53,9 +53,9 @@ function costeTotal() {
   var totalGeneral = countGeneral * precioGeneral;
   var totalVIP = countVIP * precioVIP;
 
-  document.getElementById("preciogeneral").innerHTML = totalGeneral + "€";
+  document.getElementById("preciogeneral").innerHTML = parseFloat(totalGeneral).toFixed(2) + "€";
 
-  document.getElementById("preciovip").innerHTML = totalVIP + "€";
+  document.getElementById("preciovip").innerHTML = parseFloat (totalVIP).toFixed(2) + "€";
 }
 
 function sumarGeneral() {
