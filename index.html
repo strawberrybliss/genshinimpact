@@ -103,10 +103,22 @@
                     <input type="text" id="nombre" placeholder="Escribe tu nombre...">
                     <p class="form-text">✦ E-mail<span>*</span> ✦</p>
                     <input type="text" id="email" placeholder="Escribe tu e-mail...">
-                    <p class="form-text">✦ Comentario ✦</p>
+                    <p class="form-text">✦ Comentario<span>*</span> ✦</p>
                     <input type="text" id="comment" placeholder="Escribe un mensaje...">
-                    <button class="boton">Enviar</button>
+                    <button id="boton" class="boton" onclick="return openModal()">Enviar</button>
                 </form>
+
+                <!-- ventana modal -->
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span onclick="closeModal()" id="close" class="close">&times;</span>
+                        <h2>Formulario recibido viajer@ ✦</h2>
+                        <p id="modalMessage"></p>
+                    </div>
+                </div>
+
+
         </section>
 
         <!-- FOOTER -->

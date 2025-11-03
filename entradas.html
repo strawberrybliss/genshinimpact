@@ -57,32 +57,32 @@
             <section id="entradas-cont">
                 <h1 class="ts-1">····✦ TU LLAVE A LOS SIETE REINOS ✦····</h1>
                     <div id="entradas-wrapper">
-                        <div class="entrada" data-price="14">
+                        <div class="entrada" data-price="14.00">
                             <div>
                             <img src="media/images/general.png">
                             </div>
                             <h3>Entrada general</h3>
                             <p>Para todos los públicos</p>
-                            <div class="price">14.00€</div>
+                            <div id="preciogeneral" class="price">0€</div>
                             <div class="counter">
-                                <button class="minus">-</button>
-                                    <span class="count">0</span>
+                                <button onclick="restarGeneral()" class="minus">-</button>
+                                    <span id="contargeneral" class="count">0</span>
 
-                                <button class="plus">+</button>
+                                <button onclick="sumarGeneral()" class="plus">+</button>
                             </div>
                         </div>
 
-                        <div class="entrada" data-price="26">
+                        <div class="entrada" data-price="26.00">
                             <div>
                             <img src="media/images/vip.png">
                             </div>
                             <h3>Entrada VIP</h3>
                             <p>Incluye regalos exclusivos</p>
-                            <div class="price">26.00€</div>
+                            <div id="preciovip" class="price">0€</div>
                             <div class="counter">
-                                <button class="minus">-</button>
-                                    <span class="count">0</span>
-                                <button class="plus">+</button>
+                                <button onclick="restarVip()" class="minus">-</button>
+                                    <span id="contarvip" class="count">0</span>
+                                <button onclick="sumarVip()" class="plus">+</button>
                             </div>
                         </div>
                     </div>
